@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIRA</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CDN link, fontawesome -->
+</head>
+<body>
+    <div class="headContainer">
+        <div class="subHeadContainer">
+            <div class="filterContainer">
+                <div class="lightPinkFilter staticFilter"></div>
+                <div class="lightBlueFilter staticFilter"></div>
+                <div class="lightGreenFilter staticFilter"></div>
+                <div class="blackFilter staticFilter"></div>
+            </div>
+            <div class="actionContainer">
+                <div class="addTaskContainer"><i class="fa fa-plus"></i></div>
+                <div class="deleteTaskContainer"><i class="fa fa-trash"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="bodyContainer">
+        <!-- Append Slip Element -->
+    </div>
+    <div class="floatingContainer">
+        <div class="textContainer">
+            <textarea type="text" class="textAreaElement" placeholder="Piece of work here"></textarea>
+        </div>
+        <div class="floatingFilterContainer">
+            <div class="lightPinkFilter floatingFilterElement"></div>
+            <div class="lightBlueFilter floatingFilterElement"></div>
+            <div class="lightGreenFilter floatingFilterElement"></div>
+            <div class="blackFilter floatingFilterElement active"></div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+<!-- Short unique id generator, inturn used as slip credentials-->
+<script src="./script.js"></script>
+</html>

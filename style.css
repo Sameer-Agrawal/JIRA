@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* box-sizing: border-box --> Represent, content size, padding, border is inclusive of element size */
+
+body{
+    background-color: #D6CDA4;
+}
+
+.headContainer{
+    width: 100vw;
+    height: 6rem;
+    background-color: #1C6758;
+    display: flex;
+    align-items: center;
+}
+
+.subHeadContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.filterContainer, .actionContainer{
+    height: 4rem;
+    background-color: #EEF2E6;
+    border-radius: 0.6rem;
+}
+
+.filterContainer{
+    width: 24rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.actionContainer{
+    width: 12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.lightPinkFilter, .lightBlueFilter, .lightGreenFilter, .blackFilter{
+    height: 2.5rem;
+    width: 4rem;
+    background-color: red;
+}
+
+.lightPinkFilter{
+    background-color: lightpink;
+}
+
+.lightBlueFilter{
+    background-color: lightblue;
+}
+
+.lightGreenFilter{
+    background-color: lightgreen;
+}
+
+.blackFilter{
+    background-color: black;
+}
+
+/* vw(viewport width) --> withhold entire width, with respect to screen */
+
+
+/* Floating container style enhancement */
+
+.floatingContainer{
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto auto;
+    display: none;
+}
+
+/* If non-static ancestor is absent, element is positioned relative to browser window */
+
+.textContainer, .textAreaElement{
+    height: 50vh;
+    width: 40vw;
+}
+
+.textAreaElement{
+    outline: none;
+    background-color: #EEF2E6;
+    border: none;
+    font-size: xx-large;
+    padding: 1rem 1rem;
+    resize: none;
+}
+
+/* The resize property specifies whether or not an element is resizable by the user */
+
+.floatingFilterContainer{
+    height: 50vh;
+    width: 10vw;
+    background-color: #1C6758;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.floatingFilterElement{
+    height: 3.5rem;
+    width: 6.5rem;
+}
+
+/* margin: auto auto --> Auto margin from top/bottom, left/right */
+
+/* Slip element style enhancement */
+
+.bodyContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 2.5rem;
+    column-gap: 2.5rem;
+    margin: 2rem;
+}
+
+/* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. */
+/* The row-gap property specifies the gap between the rows. */
+/* The column-gap property specifies the gap between the column. */
+
+.slipElement{
+    background-color: #EEF2E6;
+    width: 15rem;
+    height: 12rem;
+}
+
+.filter{
+    width: 15rem;
+    height: 1.8rem;
+}
+
+.credentials{
+    width: 15rem;
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chore{
+    background-color: #76BA99;
+    width: 15rem;
+    height: 7.25rem;
+    word-break: break-word;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    overflow: auto;
+    outline: none;
+}
+
+/* overflow: auto --> The overflow property specifies what should happen if content overflows an element's box. The auto value is similar to scroll , but it adds scrollbars only when necessary */
+
+.active{
+    border: 0.3rem solid #76BA99;
+}
+
+.choreManipulation{
+    background-color: #76BA99;
+}
+
+.choreManipulation i{
+    position: relative;
+    top: -0.2rem;
+    right: -13.2rem;
+    font-size: 1.75rem;
+}
+
+/* position: relative --> Element go around with document flow. top, right, bottom, left, attribute are relevant with respect to native position */
+
+/* border-shorthand --> border : border-thickness border-style border-color */
+
+/*  word-break: break-word --> Allow long words to be able to break and wrap onto the next line */
